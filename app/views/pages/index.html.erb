@@ -1,0 +1,19 @@
+<div class="l-t-10">
+  <%= label_tag "Given" %>
+  <div>
+    <%= label_tag "Person A Age of death = " %>
+    <%= number_field_tag :age_of_death_a %>
+    <%= label_tag ", Year of Death = " %>
+    <%= number_field_tag :year_of_death_a %>
+  </div>
+  <div>
+    <%= label_tag "Person B Age of death = " %>
+    <%= number_field_tag :age_of_death_b %>
+    <%= label_tag ", Year of Death = " %>
+    <%= number_field_tag :year_of_death_b %>
+  </div>
+  <%= button_tag "Submit", onclick:"person();" %>
+</div>
+<div id="answers">
+  <%# <%= render 'answer' %> %>
+</div>
