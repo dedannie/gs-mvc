@@ -1,5 +1,5 @@
 <div class="l-t-10">
-  <%= label_tag "Given" %>
+  <%= label_tag "Given:"%>
   <div>
     <%= label_tag "Person A Age of death = " %>
     <%= number_field_tag :age_of_death_a %>
@@ -12,8 +12,6 @@
     <%= label_tag ", Year of Death = " %>
     <%= number_field_tag :year_of_death_b %>
   </div>
-  <%= button_tag "Submit", onclick:"person();" %>
-</div>
-<div id="answers">
-  <%# <%= render 'answer' %> %>
+  <%= button_tag "Submit", onclick:"calculate()", class:"m-t-5" %>
+  <%= render 'answers' %>
 </div>
