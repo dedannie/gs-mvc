@@ -7,6 +7,7 @@ class PagesController < ApplicationController
     year_a = params[:year_a].to_i > 0 ? params[:year_a].to_i : -1
     age_b = params[:age_b].to_i > 0 ? params[:age_b].to_i : -1
     year_b = params[:year_b].to_i > 0 ? params[:year_b].to_i : -1
+    
     # Person A calculation
     a = ( year_a - age_a )
     killed_by_a = fibonacci(a)
